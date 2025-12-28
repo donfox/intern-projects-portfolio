@@ -1,0 +1,131 @@
+# Intern Projects Monorepo - Combined .gitignore
+
+# ==========================================
+# Excluded Projects (separate repositories)
+# ==========================================
+health-claims-engine-poc/
+
+# ==========================================
+# Python (provider_vault, pyx12_837p_to_json)
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+*.pyc
+*.pyo
+*.pyd
+
+# ==========================================
+# Elixir/Phoenix (provider_vault)
+# ==========================================
+_build/
+deps/
+*.ez
+*.beam
+.elixir_ls/
+erl_crash.dump
+
+# Phoenix specific
+priv/static/
+node_modules/
+npm-debug.log
+
+# ==========================================
+# JavaScript/Node (if used in any project)
+# ==========================================
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# ==========================================
+# Environment & Secrets
+# ==========================================
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+secrets/
+
+# ==========================================
+# Databases
+# ==========================================
+*.db
+*.sqlite
+*.sqlite3
+
+# ==========================================
+# OS Files
+# ==========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ==========================================
+# IDEs & Editors
+# ==========================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# ==========================================
+# Testing & Coverage
+# ==========================================
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# ==========================================
+# Logs
+# ==========================================
+*.log
+logs/
+
+# ==========================================
+# Temporary & Build Files
+# ==========================================
+*.tmp
+*.bak
+*.cache
+.temp/
+
+# ==========================================
+# Archives
+# ==========================================
+*.zip
+*.tar.gz
+*.rar

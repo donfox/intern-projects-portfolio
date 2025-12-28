@@ -1,0 +1,82 @@
+[
+  {
+    "claim_id": null,
+    "total_charge": null,
+    "service_lines": []
+  },
+  {
+    "claim_id": null,
+    "total_charge": null,
+    "service_lines": []
+  },
+  {
+    "claim_id": null,
+    "total_charge": null,
+    "service_lines": []
+  },
+  {
+    "claim_id": null,
+    "total_charge": null,
+    "service_lines": []
+  },
+  {
+    "claim_id": null,
+    "total_charge": null,
+    "service_lines": []
+  },
+  {
+    "claim_id": null,
+    "total_charge": null,
+    "service_lines": []
+  },
+  {
+    "claim_id": null,
+    "total_charge": null,
+    "service_lines": []
+  },
+  {
+    "claim_id": null,
+    "total_charge": null,
+    "service_lines": []
+  },
+  {
+    "claim_id": null,
+    "total_charge": null,
+    "service_lines": []
+  },
+  {
+    "claim_id": null,
+    "total_charge": null,
+    "service_lines": []
+  },
+  {
+    "claim_id": null,
+    "total_charge": null,
+    "service_lines": []
+  },
+  {
+    "claim_id": "1001",
+    "total_charge": "100",
+    "service_lines": [
+      {
+        "procedure_code": "HC:99213",
+        "line_charge": "100"
+      }
+    ]
+  },
+  {
+    "claim_id": null,
+    "total_charge": null,
+    "service_lines": []
+  },
+  {
+    "claim_id": null,
+    "total_charge": null,
+    "service_lines": []
+  },
+  {
+    "claim_id": null,
+    "total_charge": null,
+    "service_lines": []
+  }
+]

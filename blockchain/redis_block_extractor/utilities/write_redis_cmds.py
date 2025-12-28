@@ -1,0 +1,89 @@
+# Define the Redis commands and examples as a string
+redis_commands = """
+# Redis Commands Summary
+
+# Inspect Keys and Types
+# 1. List all keys in Redis:
+#    redis-cli keys '*'
+
+# 2. Check the type of a specific key:
+#    redis-cli type <key>
+#    Example:
+#    redis-cli type processed_blocks
+
+# 3. Use MONITOR to observe Redis commands in real-time:
+#    redis-cli monitor
+
+---
+
+# Set Operations
+# 1. Add a member to a Redis set:
+#    redis-cli sadd <set_key> <value>
+#    Example:
+#    redis-cli sadd processed_blocks 10551931
+
+# 2. Check if a value is a member of a set:
+#    redis-cli sismember <set_key> <value>
+#    Example:
+#    redis-cli sismember processed_blocks 10551931
+
+# 3. List all members of a Redis set:
+#    redis-cli smembers <set_key>
+#    Example:
+#    redis-cli smembers processed_blocks
+
+# 4. Remove a specific member from a set:
+#    redis-cli srem <set_key> <value>
+#    Example:
+#    redis-cli srem processed_blocks 10551931
+
+# 5. Clear all members from a set without deleting the key (manual iteration):
+#    redis-cli smembers <set_key> | xargs -n1 redis-cli srem <set_key>
+#    Example:
+#    redis-cli smembers processed_blocks | xargs -n1 redis-cli srem processed_blocks
+
+---
+
+# Key Deletion
+# 1. Delete an entire key (e.g., a set):
+#    redis-cli del <key>
+#    Example:
+#    redis-cli del processed_blocks
+
+# 2. Check if a key exists:
+#    redis-cli exists <key>
+#    Example:
+#    redis-cli exists processed_blocks
+
+---
+
+# Python Script Snippets
+
+# Delete a Redis Set in Python
+import redis
+
+redis_instance = redis.Redis(host='localhost', port=6379, db=0)
+set_key = "processed_blocks"
+
+# Delete the set
+redis_instance.delete(set_key)
+print(f"Set {set_key} has been deleted.")
+
+# Remove All Members Without Deleting the Set
+import redis
+
+redis_instance = redis.Redis(host='localhost', port=6379, db=0)
+set_key = "processed_blocks"
+
+# Remove all members
+members = redis_instance.smembers(set_key)
+for member in members:
+    redis_instance.srem(set_key, member)
+print(f"All members removed from set {set_key}.")
+"""
+
+# Write the content to a text file
+with open("redis_commands_summary.txt", "w") as file:
+    file.write(redis_commands)
+
+print("File saved as redis_commands_summary.txt")

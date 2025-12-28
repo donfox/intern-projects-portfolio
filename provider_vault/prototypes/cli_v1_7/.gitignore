@@ -1,0 +1,65 @@
+# ─────────────────────────────
+# ProviderVault CLI .gitignore
+# ─────────────────────────────
+
+# Elixir / Mix build artifacts
+/_build/
+/deps/
+/cover/
+*.ez
+*.beam
+erl_crash.dump
+
+# Mix release / escript binaries
+/provider_vault_cli
+
+# Editor & OS files
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.orig
+
+# NPPES / data files
+priv/data/*.csv
+priv/data/*.xlsx
+priv/data/*.zip
+priv/data/*.txt
+priv/data/*.json
+priv/data/tmp/
+data/
+scripts/tmp/
+
+# Logs and temp output
+/log/
+*.log
+/tmp/
+*.tmp
+
+# Env and secrets
+.env
+.env.*
+/config/*.secret.exs
+
+# Test artifacts
+/test/tmp/
+test-*.csv
+test-*.xlsx
+
+# Coverage & reports
+/cover/
+*.lcov
+*.html
+
+# Dependency lock backup
+mix.lock.backup
+
+# macOS & Linux metadata
+.Trashes
+.AppleDouble
+.fseventsd
+Icon?
+Thumbs.db*.backup
+sample_*.csv
