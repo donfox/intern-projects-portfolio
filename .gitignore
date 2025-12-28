@@ -1,11 +1,6 @@
 # Intern Projects Monorepo - Combined .gitignore
 
 # ==========================================
-# Excluded Projects (separate repositories)
-# ==========================================
-health-claims-engine-poc/
-
-# ==========================================
 # Python (provider_vault, pyx12_837p_to_json)
 # ==========================================
 __pycache__/
